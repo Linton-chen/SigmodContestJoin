@@ -1,0 +1,18 @@
+#include <>
+
+#define MAX_RELATION_NUM 10
+
+class QueryProcess
+{
+
+private:
+	int relationArray[MAX_RELATION_NUM];
+	void* relationAddr[MAX_RELATION_NUM];
+	QueryTree* pQueryTree;
+
+public:
+	buildRelation(char *fileName);
+	buildQueryTree(char *cmdline);
+	executionQuery();
+	calculateResult();
+};
